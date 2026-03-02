@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add() {
+            if (document.getElementById("username").value === "" && document.getElementById("email").value === "") {
+                alert("user name is required")
+            } else {
+                var data = document.getElementById("username").value
+                var emailData = document.getElementById("email").value
+                console.log("username " + data + "email " + emailData)
+                document.getElementById("name").innerHTML = data
+                document.getElementById("data").innerHTML = emailData
+            }
+        }
+        // function showme() {
+        //     const result = document.getElementById("text").innerHTML = "john admin "
+        //     console.log(result)
+        // }
+        function visiblity (){
+            document.getElementById("hidden").className = "img"
+        }
+        function text(){
+            document.getElementById("data").className = "p"
+        }
+    </script>
+    <style>
+        .img {
+            display: none;
+        }
+        .p{
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="./img1.jpg" alt="image" id="hidden" onClick="visiblity()"/> -->
+    <p id="data" onclick="text()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit commodi consequatur unde assumenda magni, obcaecati perspiciatis dignissimos possimus neque alias aut reiciendis dolorem nemo exercitationem debitis in ut ipsa. Officia.
+    </p>
+    <input type="text" placeholder="enter your name " id="username" />
+    <input type="email" placeholder="enter your email" id="email" />
+    <button onclick="add()">submit</button>
+    Name: <p id="name"></p>
+    Email :<p id="data"></p>
+    <!-- <p id="text" onclick="showme()">hello world</p> -->
+</body>
+
+</html>
