@@ -7,6 +7,16 @@ function getData(event) {
     var password = document.getElementById("exampleInputPassword1").value
     console.log(email, password)
 }
-function change(){
-    document.getElementById("image").src="./img2.jp"
+
+function change(id,changePic){
+  var picture =   document.getElementById(id);
+  picture.src = changePic
 }
+
+function changetext(){
+    document.getElementById("text").style.fontSize = "30px"
+
+}
+
+const changeText =  document.getElementsByTagName("p")
+changeText[1].style.backgroundColor = "blue"
