@@ -23,38 +23,42 @@
 
 
 
-var userName = 'john'
-var userName = 'admin '
-userName = ' xfijshz'
-let lastName = ' john'
-lastName = ' admin '
-const age = 12
+// var userName = 'john'
+// var userName = 'admin '
+// userName = ' xfijshz'
+// let lastName = ' john'
+// lastName = ' admin '
+// const age = 12
 
 
-console.log("i am " + age + " years old")
-console.log(`i am ${age} ${lastName} years old`)
+// console.log("i am " + age + " years old")
+// console.log(`i am ${age} ${lastName} years old`)
 
 
 
-var userName = prompt("what is your name ??")
-var studentData = {
-    name: userName,
-    age: 12,
-    class: 5,
-    gender: "male",
-    subjects: ['math', 'urdu', 'islamiat'],
-    method: function () {
-        console.log(this.name, this.age, " he can eat ")
-    },
-}
-studentData.age = 15
-studentData.school = "ABC School"
-delete studentData.class
-studentData.method()
-console.log(studentData)
+// var userName = prompt("what is your name ??")
+// var studentData = {
+//     name: userName,
+//     age: 12,
+//     class: 5,
+//     gender: "male",
+//     subjects: ['math', 'urdu', 'islamiat'],
+//     method: function () {
+//         console.log(this.name, this.age, " he can eat ")
+//     },
+// }
+// studentData.age = 15
+// studentData.school = "ABC School"
+// delete studentData.class
+// studentData.method()
+// console.log(studentData)
+
+
+
+
 var array = [
     {
-        name: userName,
+        name: "userName",
         age: 12,
         class: 5,
         gender: "male",
@@ -62,8 +66,9 @@ var array = [
         method: function () {
             console.log(this.name, this.age, " he can eat ")
         },
-    }, {
-        name: userName,
+    },
+    {
+        name: "admin",
         age: 12,
         class: 5,
         gender: "male",
@@ -71,6 +76,6 @@ var array = [
         method: function () {
             console.log(this.name, this.age, " he can eat ")
         },
-    }
+    },
 ]
-
+console.log(array[1].class)
