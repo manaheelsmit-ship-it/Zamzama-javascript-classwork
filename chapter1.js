@@ -56,26 +56,61 @@
 
 
 
-var array = [
-    {
-        name: "userName",
-        age: 12,
-        class: 5,
-        gender: "male",
-        subjects: ['math', 'urdu', 'islamiat'],
-        method: function () {
-            console.log(this.name, this.age, " he can eat ")
-        },
-    },
-    {
-        name: "admin",
-        age: 12,
-        class: 5,
-        gender: "male",
-        subjects: ['math', 'urdu', 'islamiat'],
-        method: function () {
-            console.log(this.name, this.age, " he can eat ")
-        },
-    },
-]
-console.log(array[1].class)
+// var array = [
+//     {
+//         name: "userName",
+//         age: 12,
+//         class: 5,
+//         gender: "male",
+//         subjects: ['math', 'urdu', 'islamiat'],
+//         method: function () {
+//             console.log(this.name, this.age, " he can eat ")
+//         },
+//     },
+//     {
+//         name: "admin",
+//         age: 12,
+//         class: 5,
+//         gender: "male",
+//         subjects: ['math', 'urdu', 'islamiat'],
+//         method: function () {
+//             console.log(this.name, this.age, " he can eat ")
+//         },
+//     },
+// ]
+// console.log(array[1].class)
+// var plan1 = {
+//     name: "basic",
+//     rate: "20$",
+//     quantity: "20 pages"
+// }
+// var plan2 = {
+//     name: "pro",
+//     rate: "40$",
+//     quantity: "40 pages"
+// }
+// var plan3 = {
+//     name: "premium",
+//     rate: "60$",
+//     quantity: "60 pages"
+// }
+function Plan(name, rate, quantity) {
+        this.name = name,
+        this.rate = rate,
+        this.quantity = quantity,
+        this.method = function (){
+            return this.rate  * 2
+        }
+}
+var plan1 = new Plan("basic", 20, "20pages")
+console.log(plan1)
+// var object = {
+//     name: "userName",
+//     age: 12,
+//     class: 5,
+//     gender: "male",
+//     subjects: ['math', 'urdu', 'islamiat'],
+//     method: function () {
+//         console.log(this.name, this.age, " he can eat ")
+//     },
+// },
