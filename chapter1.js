@@ -95,15 +95,15 @@
 //     quantity: "60 pages"
 // }
 function Plan(name, rate, quantity) {
-        this.name = name,
+    this.name = name,
         this.rate = rate,
         this.quantity = quantity,
-        this.method = function (){
-            return this.rate  * 2
+        this.method = function () {
+            return this.rate * 2
         }
 }
-var plan1 = new Plan("basic", 20, "20pages")
-console.log(plan1)
+// var plan1 = new Plan("basic", 20, "20pages")
+// console.log(plan1)
 // var object = {
 //     name: "userName",
 //     age: 12,
@@ -114,3 +114,114 @@ console.log(plan1)
 //         console.log(this.name, this.age, " he can eat ")
 //     },
 // },
+
+// function data (name, age, classes){
+//     this.name = name,
+//     this.age = age,
+//     this.class = classes,
+//     this.method = function(){
+//         console.log(this.name, this.age, " he can eat ")
+//     }
+// }
+
+// let user = (a, b) => { console.log(a + b) }
+// user(3, 5)
+
+
+// let userData = {
+//     name: "john",
+//     age: 12,
+//     method:  ()=> {
+//         let user = () => {
+//             console.log(this.name, this.age)
+//         }
+//         user()
+//     }
+// }
+
+// userData.method()
+
+
+// function User(name = "john", age = 12) {
+//     console.log(name, age)
+// }
+
+// User()
+
+//spread operators
+
+
+// var array1 = [5, 8, 9, 6]
+// var array2 = [1, 2, 3, ...array1]
+// var array3 = [1, 3, ...array1, ...array2]
+// console.log(array3)
+
+// const male = {
+//     age: 20,
+//     class: 12
+// }
+// const female = {
+//     age: 16,
+//     class: 10
+// }
+// const maleUser = {
+//     ...male,
+//     age: 10
+// }
+// const femaleUser = {
+//     ...female,
+//     name: "sana"
+// }
+// console.log(maleUser)
+// const userName = "john"
+// console.log([...userName])
+// // ["john"]
+
+//rest operators 
+
+// function userData(...data){
+//     console.log(data)
+// }
+// userData("admin", "john")
+// const user = {
+//     name: "john",
+//     age: 20,
+//     gender: "male"
+// }
+// const { name, ...other } = user
+// console.log(name)
+// console.log(other)
+
+
+// function data(a, b, ...rest) { //rest operator
+//     console.log(a)
+//     console.log(b)
+//     console.log(rest)
+// }
+// var arr = [1, 2, 3, 4, 5, 6]
+// data(...arr) // spread operator
+
+
+// var userName = "john"
+// console.log(userName.toLowerCase())
+var text = "my name is john. my father name is ! admin "
+// console.log(text.indexOf("is"))
+// console.log(text.lastIndexOf("is"))
+// console.log(text.charAt(4))
+for (var i = 0; i < text.length; i++) {
+    if (text.charAt(i) === "!") {
+        console.log("Exclamation point found!");
+        break;
+    }
+}
+// var result = text.replace("john", "sana")
+// console.log(result)
+// var rounds = Math.ceil(1.567)
+// console.log(rounds)
+// console.log(Math.random()*200)
+// var num = "12"
+// console.log(typeof(num))
+// console.log(typeof(parseInt(num)))
+var num2 = "98"
+console.log(typeof(num2))
+console.log(Number(num2))
