@@ -204,16 +204,16 @@ function Plan(name, rate, quantity) {
 
 // var userName = "john"
 // console.log(userName.toLowerCase())
-var text = "my name is john. my father name is ! admin "
-// console.log(text.indexOf("is"))
-// console.log(text.lastIndexOf("is"))
-// console.log(text.charAt(4))
-for (var i = 0; i < text.length; i++) {
-    if (text.charAt(i) === "!") {
-        console.log("Exclamation point found!");
-        break;
-    }
-}
+// var text = "my name is john. my father name is ! admin "
+// // console.log(text.indexOf("is"))
+// // console.log(text.lastIndexOf("is"))
+// // console.log(text.charAt(4))
+// for (var i = 0; i < text.length; i++) {
+//     if (text.charAt(i) === "!") {
+//         console.log("Exclamation point found!");
+//         break;
+//     }
+// }
 // var result = text.replace("john", "sana")
 // console.log(result)
 // var rounds = Math.ceil(1.567)
@@ -222,6 +222,57 @@ for (var i = 0; i < text.length; i++) {
 // var num = "12"
 // console.log(typeof(num))
 // console.log(typeof(parseInt(num)))
-var num2 = "98"
-console.log(typeof(num2))
-console.log(Number(num2))
+// var num2 = "98"
+// console.log(typeof(num2))
+// console.log(Number(num2))
+
+// function data(num1, num2, num3) {
+//     var num = num1 + num2 + num3
+//     return num
+// }
+// var result = data(2, 3, 4)
+// console.log(result)
+
+// const users = ["Ali", "Sara", "Ahmed"];
+// for (var i = 0; i < users.length; i++) {
+//     console.log(users[i])
+// }
+// users.forEach((data, index) => {
+//     console.log(data, index)
+// })
+// const prices = [100, 200, 300];
+// const discounted = prices.map(price => price * 0.9);
+// console.log(discounted);
+// const numbers = [10, 20, 30, 40];
+// const result = numbers.filter(n => n > 20);
+// console.log(result);
+
+// const users=[{id:1},{id:2}];
+// const user = users.find(u=>u.id===2);
+// console.log(user);
+
+
+// const data = [
+//     {
+//         name:"john",
+//         age:20,
+//         class:10
+//     }
+//     ,{
+//         name :"admin",
+//         age:30,
+//         class:16
+//     }
+
+// ]
+// const findout = data.find(n=> n.age===30);
+// console.log(findout)
+
+// const nums=[1,3,5,8];
+
+// console.log(nums.some(n=>n%2===0));
+// const arr=["JS","React"];
+// console.log(arr.includes("Manahil"));
+const nums=[5,2,9];
+nums.sort((a,b)=>b-a);
+console.log(nums);
