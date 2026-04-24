@@ -273,6 +273,49 @@ function Plan(name, rate, quantity) {
 // console.log(nums.some(n=>n%2===0));
 // const arr=["JS","React"];
 // console.log(arr.includes("Manahil"));
-const nums=[5,2,9];
-nums.sort((a,b)=>b-a);
-console.log(nums);
+// const nums=[5,2,9];
+// nums.sort((a,b)=>b-a);
+// console.log(nums);
+// function greet(name) {
+//   console.log("Hello " + name);
+// }
+
+// function processUser(callback) {
+//   const username = "Ali";
+//   callback(username);  
+// }
+// processUser(greet);
+
+
+
+
+// function userName(data){
+//     console.log("hello "+ data)
+// }
+
+// function welcome(userData){
+//     const lastName = "john"
+//     userData(lastName)
+// }
+// welcome(userName)
+
+
+
+
+// const array = [1,[2,[3,[6,[8], [9]]]]]
+// console.log(array.flat(4))
+
+
+// orderfood(recipe(waiter(eatfood)))
+
+
+function orderFood(order){
+    console.log("i  want to order pasta")
+    order("okay we will make your dish ")
+}
+function kitchen(data){ //parameter
+    console.log(data)
+}
+
+
+orderFood(kitchen)
