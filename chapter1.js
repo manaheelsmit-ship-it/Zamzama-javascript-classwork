@@ -309,13 +309,72 @@ function Plan(name, rate, quantity) {
 // orderfood(recipe(waiter(eatfood)))
 
 
-function orderFood(order){
-    console.log("i  want to order pasta")
-    order("okay we will make your dish ")
-}
-function kitchen(data){ //parameter
-    console.log(data)
-}
+// function orderFood(order){
+//     console.log("i  want to order pasta")
+//     order("okay we will make your dish ")
+// }
+// function kitchen(data){ //parameter
+//     console.log(data)
+// }
 
 
-orderFood(kitchen)
+// orderFood(kitchen)
+
+
+
+
+
+function outer() {
+  let name = "Manaheel";
+
+  function inner() {
+    console.log(name);
+  }
+
+  return inner;
+}
+
+const myFunc = outer();
+
+myFunc();
+
+
+
+
+
+function counter() {
+  let count = 0;
+
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+
+const increment = counter();
+
+increment();
+increment();
+increment();
+
+function bankAccount() {
+  let balance = 1000;
+
+  return {
+    deposit(amount) {
+      balance += amount;
+      console.log(balance);
+    },
+    withdraw(amount) {
+      balance -= amount;
+      console.log(balance);
+    },
+    balance
+  };
+}
+
+const account = bankAccount();
+
+account.deposit(500);
+account.withdraw(200);
+console.log(account.balance)
