@@ -95,12 +95,12 @@
 //     quantity: "60 pages"
 // }
 function Plan(name, rate, quantity) {
-    this.name = name,
-        this.rate = rate,
-        this.quantity = quantity,
-        this.method = function () {
-            return this.rate * 2
-        }
+  this.name = name,
+    this.rate = rate,
+    this.quantity = quantity,
+    this.method = function () {
+      return this.rate * 2
+    }
 }
 // var plan1 = new Plan("basic", 20, "20pages")
 // console.log(plan1)
@@ -324,57 +324,79 @@ function Plan(name, rate, quantity) {
 
 
 
-function outer() {
-  let name = "Manaheel";
+// function outer() {
+//   let name = "Manaheel";
 
-  function inner() {
-    console.log(name);
-  }
+//   function inner() {
+//     console.log(name);
+//   }
 
-  return inner;
-}
+//   return inner;
+// }
 
-const myFunc = outer();
+// const myFunc = outer();
 
-myFunc();
-
-
+// myFunc();
 
 
 
-function counter() {
-  let count = 0;
 
-  return function () {
-    count++;
-    console.log(count);
-  };
-}
 
-const increment = counter();
+// function counter() {
+//   let count = 0;
 
-increment();
-increment();
-increment();
+//   return function () {
+//     count++;
+//     console.log(count);
+//   };
+// }
 
-function bankAccount() {
-  let balance = 1000;
+// const increment = counter();
 
-  return {
-    deposit(amount) {
-      balance += amount;
-      console.log(balance);
-    },
-    withdraw(amount) {
-      balance -= amount;
-      console.log(balance);
-    },
-    balance
-  };
-}
+// increment();
+// increment();
+// increment();
 
-const account = bankAccount();
+// function bankAccount() {
+//   let balance = 1000;
 
-account.deposit(500);
-account.withdraw(200);
-console.log(account.balance)
+//   return {
+//     deposit(amount) {
+//       balance += amount;
+//       console.log(balance);
+//     },
+//     withdraw(amount) {
+//       balance -= amount;
+//       console.log(balance);
+//     },
+//     balance
+//   };
+// }
+
+// const account = bankAccount();
+
+// account.deposit(500);
+// account.withdraw(200);
+// console.log(account.balance)
+
+
+
+const mySet = new Set([1,1,3,4,2, 2, 3, 3]);
+console.log(mySet.add(5))
+mySet.delete(2)
+console.log(mySet.has(2))
+mySet.clear()
+console.log(mySet.size)
+console.log(mySet)
+
+const myMap = new Map([
+  ["name", "john"],
+  ["age",32]
+])
+myMap.set("city", "karachi")
+console.log(myMap.get("name"))
+console.log(myMap.has("age"))
+console.log(myMap.delete("age"))
+myMap.clear()
+console.log(myMap.size)
+console.log(myMap)
